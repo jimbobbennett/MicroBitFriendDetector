@@ -57,4 +57,4 @@ You can also import the code from this URL -
 
 I hope you enjoy this workshop. If you want to get in touch, you can find me on twitter - [@jimbobbennett](https://twitter.com/jimbobbennett). I'd love to hear what you are building.
 
-Feel free to raise issues with any bugs you've found, or any suggestions for changes and improvements.
+Feel free to raise [issues](https://github.com/jimbobbennett/MicroBitFriendDetector/issues) with any bugs you've found, or any suggestions for changes and improvements.
