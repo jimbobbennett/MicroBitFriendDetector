@@ -33,6 +33,24 @@ In this tutorial, you will create a friend detector - a wrist-mounted gadget tha
 
   ![The empty MakeCode block editor](./Images/EmptyBlockEditor.png)
 
+### Pairing your micro:bit
+
+Depending on what browser you are using, you might be able to pair your micro:bit and download code directly onto it. To see if you can do this, from MakeCode, click the cog icon. If you see the *Pair device* option, then you can download directly to your device from MakeCode.
+
+* Select the *Pair device* option from the cog menu
+  
+  ![The pair device option in the cog menu]()
+
+* Ensure your micro:bit is plugged in to your computer using a USB cable
+
+* Select **Pair device* from the popup
+  
+  ![The pair device popup telling you to plug your micro:bit in with a USB cable]()
+
+* A dialog box will popup telling you that MakeCode wants to connect. It will show a list of any USB devices plugged in, including your micro:bit. Select your micro:bit and select **Connect**.
+  
+  ![The USB connection dialog box]()
+
 ### The MakeCode editor
 
 The MakeCode editor is where you program your BBC micro:bit, using either blocks or JavaScript. For this tutorial, we'll use blocks.
@@ -86,28 +104,17 @@ You will see the output of this program in the simulator. The LEDs will be lit m
 
 To run your program on a physical micro:bit instead of the simulator, you will need to download it onto the micro:bit.
 
-There are two ways to do this, depending on what browser you are using. From MakeCode, click the cog icon. If you see the *Pair device* option, then you can download directly to your device from MakeCode.
-
 #### Deploy using MakeCode
 
-* Select the *Pair device* option from the cog menu
-  
-  ![The pair device option in the cog menu]()
+If you were able to pair your device with MakeCode:
 
-* Ensure your micro:bit is plugged in to your computer using a USB cable
-* Select **Pair device*
-  
-  ![The pair device popup telling you to plug your micro:bit in with a USB cable]()
-
-* A dialog box will popup telling you that MakeCode wants to connect. It will show a list of any USB devices plugged in, including your micro:bit. Select your micro:bit and select **Connect**.
-  
-  ![The USB connection dialog box]()
-
-* Once paired, select the **Download** button on the bottom of the MakeCode screen.
+* Select the **Download** button on the bottom of the MakeCode screen.
 
 The code will be deployed to the micro:bit, and the micro:bit restarted. The `on start` block will run and the LEDs will light up.
 
 #### Deploy manually
+
+If you were not able to pair your device with MakeCode:
 
 * Select the **Download** button on the bottom of the MakeCode screen
 * A file will be downloaded to your downloads folder called `microbit-Untitled.hex`
@@ -227,7 +234,7 @@ This code will all be put in the `forever` block.
 
 * Drag the `radio send string ""` block and drop it inside the `forever` block
 
-* Select the empty string value `" "`. Type inside this to set the value to be something unique to you and your friends. This is your secret code that means your micro:bits will only smile when your friends are around, not just anyone with the same program.
+* Select the empty string value `" "`. Type inside this to set the value to be something unique to you and your friends. This is your secret code that means your micro:bits will only smile when your friends are around, not just anyone with the same program. In the image below, I used the value `BitsCrew`.
 
   ![The radio send string block inside the forever block](./Images/ForeverSendRadio.png)
 
@@ -261,8 +268,115 @@ The `if ... else` block has a section where you can drag conditionals, and condi
   
   ![The full if clause showing if counter > 0 then](./Images/FullIfClause.png)
 
+If the counter is greater than one, then the LEDs will need to show a smiley face, and the counter will need to count down by 1.
+
+* Select *Basic* from the toolbox
+
+* Drag the `show leds` block into the top part of the conditional so that it is run if the condition is matched
+
+* Select squares in the 5x5 grid to draw a smiley face
+  
+  ![The show leds block with a smiley face](./Images/SmileyFaceShowLeds.png)
+
+* Select *Variables* from the toolbox
+
+* Drag the `change counter by 1` block to below the `show leds` block
+
+* Select the value to change by and set this to `-1`
+  
+  ![The change counter block with a change value of 01](./Images/ChangeCounter.png)
+
+This completes the algorithm for if the `counter` is greater than 0. The logic for if the counter is 0 will go into the `else` part of the `if ... else` block.
+
+* Select *Basic* from the toolbox
+
+* Drag the `show leds` block into the `else` part of the conditional so that it is run if the condition is not matched
+
+* Select squares in the 5x5 grid to draw an X
+  
+  ![The show leds block with an X](./Images/XShowLeds.png)
+
+The counter needs to count down the number of seconds, so at the end of the `forever` block it needs to wait one second before this block runs again. Waits use the `pause` block, and these pause for a number of milliseconds - a millisecond being one thousandth of a second.
+
+* Select *Basic* from the toolbox
+
+* Drag the `pause (ms) 100` block into the `forever` block below the `if ... else` block.
+
+* Select the pause time of 100ms. A menu will pop up with other times, so select `1 second`.
+  
+  ![Selecting 1 second for the pause](./Images/Select1Second.png)
+
 #### Detecting messages
 
+The message received part of the algorithm is:
+
+> * *If a message is received*:
+>   * Set the counter back to 5
+
+To run a block when a message is received, there is an `on radio received` block which can be configured to run only when a specific string value is received.
+
+* Select *Radio* from the toolbox
+
+* Drag the `on radio received receivedString` block to the workspace. Make sure you drag the `receivedString` block, not the `receivedNumber` block.
+
+  ![The on radio received receivedString block in the toolbox](./Images/RadioReceivedStringToolbox.png)
+
+This block will be run whenever a string value is received by the Bluetooth radio, so the value received needs to be checked against your secret code.
+
+* Select *Logic* from the toolbox
+
+* Drag an `if` block inside the `on radio received receivedString` block. You just need an `if`, not an `if ... else`.
+
+* Drag the `0 = 0` conditional from the toolbox and drop it over the `true` condition in the `if` block
+
+* Select *Variables* from the toolbox
+
+* Drag `receivedString` over the first `0` value in the conditional
+
+* Expand the *Advanced* section of the toolbox, and select *Text*
+
+  ![The text items in the toolbox](./Images/TextItems.png)
+
+* Drag the `" "` block over the second `0` value in the conditional
+
+* Select the `" "` value and type in your secret code
+  
+  ![Setting the secret code in the conditional](./Images/RadioReceivedWithIf.png)
+
+If the string value matches your secret code, reset the timer counter back to 5 seconds.
+
+* Select the *Variables* section of the toolbox
+
+* Drag the `set <something> to 0` block to inside the `if` block. Depending on what was last selected in the workspace, this block may show `set receivedString to 0` or `set counter to 0`.
+
+* If the value being set is not `receivedString`, select the value to drop down the popup menu and select `counter`
+
+* Select the value being set and update it to `5`
+
+  ![Setting the value of the counter to 5 inside the if block](./Images/RadioReceivedWithIfAndSet.png)
+
+#### Checking your code
+
+Your workspace should look like this - with a different secret key.
+
+![The final workspace showing the code blocks](./Images/FinalWorkspace.png)
+
+The simulators will show two micro:bits. MakeCode will detect that your program relies on multiple micro:bits talking to each other over the radio so will show two devices, each one with a smiley face.
+
+### Running your code
+
+* Select the **Download** button.
+
+If you paired your micro:bit earlier then the code will be pushed to your micro:bit and it will be restarted.
+If you haven't paired your micro:bit, or are using a browser that doesn't allow you to pair:
+
+* Select the **Download** button on the bottom of the MakeCode screen
+* A file will be downloaded to your downloads folder called `microbit-Untitled.hex`
+* Launch Finder on MacOS or Explorer in Windows
+* Find your micro:bit, it will be available as an external drive
+* Drag the `microbit-Untitled.hex` file from your `Downloads` folder to the micro:bit drive
+
+Deploy the code to more than one micro:bit.
 
 
 ### Making the wrist mount
