@@ -36,11 +36,22 @@ Work through these steps one by one. Each step includes a link to the next step 
 
 ## The code
 
-If you want to use a working version of the code, you can import the project from here:
+If you want to use a working version of the code, you can import the project using the [`microbit-FriendDetector.hex`](./Code/microbit-FriendDetector.hex) file in the [`Code`](./Code) folder.
 
+* Clone or download this repo
+* From the [MakeCode home page](https://makecode.microbit.org/) select the **Import** button
+* Select **Import File**
+* Locate the `microbit-FriendDetector.hex` file from the `Code` folder in this repo
+* Select **Go ahread!** to load the project in the MakeCode editor
+
+You can also import the code from this URL -
 [makecode.microbit.org/_g5R6pjVkE290](https://makecode.microbit.org/_g5R6pjVkE290).
 
-Copy this URL, then from the [MakeCode home page](https://makecode.microbit.org/) select the **Import** button, select **Import URL** then past in the URL. Select **Go ahead!** to load the project in the MakeCode editor.
+* Copy the URL
+* From the [MakeCode home page](https://makecode.microbit.org/) select the **Import** button
+* Select **Import URL**
+* Paste in the URL
+* Select **Go ahead!** to load the project in the MakeCode editor.
 
 <hr/>
 
