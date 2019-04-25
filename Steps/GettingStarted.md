@@ -5,8 +5,6 @@ In this step you will get started setting up your micro:bit and getting to know 
 # Get everything ready
 
 * Plug the micro:bit into your computer using the micro USB cable.
-  
-  ![Photo of the micro:bit plugged into a MacBook Pro]()
 
 * Open [makecode.microbit.org](https://makecode.microbit.org/) in your browser
   

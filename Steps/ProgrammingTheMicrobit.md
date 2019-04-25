@@ -12,18 +12,18 @@ When you create a new project, you get a workspace with two blocks - `on start` 
 
 ## Write your first program
 
-> If you have coded the micro:bit before, skip this section and jump to [Building the friend detector](./GettingStarted.md#Building-the-friend-detector).
+> If you have coded the micro:bit before, skip this section and jump to [building the friend detector](./Algorithm.md).
 
 To ensure everything is working, lets create a simple program to light up the LEDs.
 
 * Expand the *Basic* section of the toolbox
 * Drag a `show leds` block to inside the `on start` block on the workspace
   
-  ![Animated gif showing the show leds block being dragged into the on start block]()
+  ![Animated gif showing the show leds block being dragged into the on start block](../Images/DragShowLeds.gif)
 
 * Select squares in the 5x5 grid inside the `show leds` block to select with LEDs you want turned on. For example, draw a heart.
   
-  ![Animated gif showing the squares in the show leds block being toggled to show a heart shape]()
+  ![Animated gif showing the squares in the show leds block being toggled to show a heart shape](../Images/LightLeds.gif)
 
 You will see the output of this program in the simulator. The LEDs will be lit matching the shape you drew.
 
@@ -51,13 +51,13 @@ If you were not able to pair your device with MakeCode:
 * Find your micro:bit, it will be available as an external drive
 * Drag the `microbit-Untitled.hex` file from your `Downloads` folder to the micro:bit drive
   
-  ![Animated gif showing the hex file being dragged from the downloads folder to the micro:bit drive]()
+  ![Animated gif showing the hex file being dragged from the downloads folder to the micro:bit drive](../Images/DragHexFile.gif)
 
 The code will be deployed to the micro:bit, and the micro:bit restarted. The `on start` block will run and the LEDs will light up.
 
 ## Run the app
 
-![A photo of the micro:bit with the LEDs lit up like a heart]()
+![A photo of the micro:bit with the LEDs lit up like a heart](../Images/HeartOnMicrobit.jpg)
 
 Congratulations, you have created your first micro:bit program. Now let's build the friend detector. Remove the `show leds` block from the `on start` block so you have a clean workspace.
 
