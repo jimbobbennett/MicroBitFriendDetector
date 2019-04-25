@@ -32,7 +32,7 @@ Once your code is running on multiple micro:bits, you should see smiley faces on
 * Turn one micro:bit off. After 5 seconds the other should show an X
 * Move one micro:bit away from the other. Bluetooth has a long range, so you may need to move a long way away - the distance depends on what else is between the micro:bits, such as walls and people.
 
-![Animated gif of one microbit changing from a smiley to an X as another is turned off]()
+![Animated gif of one microbit changing from a smiley to an X as another is turned off](../Images/SmileyToX.gif)
 
 ## Change the range
 
