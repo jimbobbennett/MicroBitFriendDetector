@@ -26,22 +26,28 @@ This block will be run whenever a string value is received by the Bluetooth radi
 * Select *Logic* from the toolbox
 
 * Drag an `if` block inside the `on radio received receivedString` block. You just need an `if`, not an `if ... else`.
+  
+  ![An if block inside the on radio received block](../Images/RadioReceivedif.png)
 
-* Drag the `0 = 0` conditional from the toolbox and drop it over the `true` condition in the `if` block
+* Drag the `0 = 0` comparison from the toolbox and drop it over the `true` condition in the `if` block
+  
+  ![Adding a comparison to the if block](../Images/RadioReceivedifCondition.png)
 
 * Select *Variables* from the toolbox
 
-* Drag `receivedString` over the first `0` value in the conditional
+* Drag `receivedString` over the first `0` value in the comparison
+  
+  ![Adding the receivedString to the comparison](../Images/RadioReceivedifConditionWithString.png)
 
 * Expand the *Advanced* section of the toolbox, and select *Text*
 
   ![The text items in the toolbox](../Images/TextItems.png)
 
-* Drag the `" "` block over the second `0` value in the conditional
+* Drag the `" "` block over the second `0` value in the comparison
 
 * Select the `" "` value and type in your secret code
   
-  ![Setting the secret code in the conditional](../Images/RadioReceivedWithIf.png)
+  ![Setting the secret code in the comparison](../Images/RadioReceivedWithIf.png)
 
 ## Reset the timer
 
