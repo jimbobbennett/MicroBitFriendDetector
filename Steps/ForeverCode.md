@@ -41,22 +41,26 @@ Conditionals are in the *Logic* section of the toolbox.
   ![The logic toolbox items](../Images/LogicItems.png)
 
 * Drag the `if ... else` block inside the `forever` block, below the `radio send string` block
+  
+  ![The If block in the forever block](../Images/AddIfClause.png)
 
 Conditions can be *boolean*, so if a value is true or false. They can also be *comparisons*, comparing two values to see if they are the same, one is larger than the other, or whatever comparison is needed.
 
 The algorithm checks the `counter` variable and has one block if the counter is greater than 0, and another block if the counter is not greater than 0.
 
-The `if ... else` block has a section where you can drag conditionals, and conditionals have sections where you can drag variables.
+The `if ... else` block has a section where you can drag comparisons, and comparisons have sections where you can drag variables.
 
 * Select *Logic* from the toolbox
 
-* Drag the `0 = 0` conditional from the toolbox and drop it over the `true` condition in the `if ... else` block
+* Drag the `0 = 0` comparison block from the toolbox and drop it over the `true` value in the `if ... else` block
   
-  ![Drag the conditional over the true check](../Images/DragConditional.png)
+  ![Drag the comparison block over the true check](../Images/DragConditional.png)
 
 * Select *Variables* from the toolbox
 
 * Drag the `counter` block and drop it over the first `0` in the comparison.
+  
+  ![Drag the counter variable into the comparison](../Images/DragCounterVariable.png)
 
 * Change the comparison from `=` to `>`. The statement should read `if counter > 0 then`.
   

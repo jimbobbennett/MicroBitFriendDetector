@@ -17,7 +17,7 @@ In this tutorial, you will create a friend detector - a wrist-mounted gadget tha
 * Some duct tape (I recommend this [rainbow duct tape](https://amzn.to/2XLnFGN))
 * Velcro
 
-![Picture of what is needed - a micro:bit with power pack, duct tape, velcro and a computer](./Images/WhatYouNeed.JPG)
+![Picture of what is needed - a micro:bit with power pack, duct tape, velcro and a computer](./Images/WhatYouNeed.jpg)
 
 ## The steps
 
