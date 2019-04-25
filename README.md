@@ -1,6 +1,6 @@
 # BBC micro:bit Friend Detector
 
-The [BBC micro:bit](https://amzn.to/2UxQNiM) is a pocket-sized computer that allows you to have loads of fun whilst learning digital technology and computer science. You can program it using block-based coding and build anything - from simple programs to lighti up LEDs to robots, musical instruments and more.
+The [BBC micro:bit](https://amzn.to/2UxQNiM) is a pocket-sized computer that allows you to have loads of fun whilst learning digital technology and computer science. You can program it using block-based coding and build anything - from simple programs to light up LEDs, to robots, musical instruments and more.
 
 ![micro:bit logo](https://microbit.org/images/microbit-logo-stripped.png)
 
@@ -14,7 +14,7 @@ In this tutorial, you will create a friend detector - a wrist-mounted gadget tha
 * A computer connected to the internet
 * A micro USB cable (if you by the micro:bit Go kit linked above it contains this already). You may need a UBC-C to USB-A adapter if your computer only has USB-C ports (for example modern Macs).
 * A micro:bit battery pack and batteries (if you by the micro:bit Go kit linked above it contains this already)
-* Some duct tape
+* Some duct tape (I recommend this [rainbow duct tape](https://amzn.to/2XLnFGN))
 * Velcro
 
 ![Picture of what is needed - a micro:bit with power pack, duct tape, velcro and a computer]()

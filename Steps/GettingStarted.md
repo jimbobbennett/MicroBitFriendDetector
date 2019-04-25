@@ -22,17 +22,17 @@ Depending on what browser you are using, you might be able to pair your micro:bi
 
 * Select the *Pair device* option from the cog menu
   
-  ![The pair device option in the cog menu]()
+  ![The pair device option in the cog menu](../Images/PairDeviceMenu.png)
 
 * Ensure your micro:bit is plugged in to your computer using a USB cable
 
 * Select **Pair device* from the popup
   
-  ![The pair device popup telling you to plug your micro:bit in with a USB cable]()
+  ![The pair device popup telling you to plug your micro:bit in with a USB cable](../Images/PairDevicePopup.png)
 
 * A dialog box will popup telling you that MakeCode wants to connect. It will show a list of any USB devices plugged in, including your micro:bit. Select your micro:bit and select **Connect**.
   
-  ![The USB connection dialog box]()
+  ![The USB connection dialog box](../Images/SelectDeviceToPair.png)
 
 ## The MakeCode editor
 
