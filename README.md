@@ -6,7 +6,7 @@ The [BBC micro:bit](https://amzn.to/2UxQNiM) is a pocket-sized computer that all
 
 In this tutorial, you will create a friend detector - a wrist-mounted gadget that lights up with a smiley face when your friends are nearby.
 
-![The final, finished Friend Detector with a micro:bit in a duct tape strap on a wrist with lights showing a smiling face]()
+![The final, finished Friend Detector with a micro:bit in a duct tape strap on a wrist with lights showing a smiling face](./Images/WorkingOnWrist.jpg)
 
 ## What you will need
 

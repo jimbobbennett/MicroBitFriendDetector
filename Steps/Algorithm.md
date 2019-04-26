@@ -6,7 +6,7 @@ In the [previous step](./ProgrammingTheMicrobit.md) you wrote your first MakeCod
 
 The friend detector is a wrist-mounted gadget that lights up with a smiley face when your friends are nearby, or shows an X if no friends are detected. To build this gadget, first you need to code up the micro:bit, then you need to make the wrist mount.
 
-![The final, finished Friend Detector with a micro:bit in a duct tape strap on a wrist with lights showing a smiling face]()
+![The final, finished Friend Detector with a micro:bit in a duct tape strap on a wrist with lights showing a smiling face](../Images/WorkingOnWrist.jpg)
 
 ## How the friend detector works
 
