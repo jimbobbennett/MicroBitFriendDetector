@@ -26,7 +26,7 @@ Timers can be created in MakeCode by using a variable that is set, then inside t
 
 The friend detector also needs to send a message, and this can be done in the `forever` block so messages are continually sent.
 
-The radio sends messages using a radio group - only micro:bits using the same group will be able to detect messages from each other, so when the micro:bit starts up, the group needs to be set so that it is the same on all of them.
+The radio sends messages using a radio group, given by a number from 0 to 255. Only micro:bits using the same group will be able to detect messages from each other, so when the micro:bit starts up, the group needs to be set so that it is the same on all of them.
 
 Breaking this down into steps gives us:
 
