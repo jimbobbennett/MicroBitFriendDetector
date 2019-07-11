@@ -8,8 +8,11 @@ The first part of our algorithm is:
 
 > * *At the start*:
 >   * Set the counter to 0
+>   * Set the radio group
 
-To create this code we need a variable for our counter, and need to set this to 0 when the micro:bit starts up.
+To create this code we need a variable for our counter, and need to set this to 0 when the micro:bit starts up, along with setting the radio group.
+
+## Create and set the counter
 
 * Select *Variables* from the toolbox
 * Select **Make a variable...**
@@ -28,7 +31,15 @@ The *Variables* toolbox will contain a few more items now - a block to use the c
 
 * Drag the `set counter to 0` block and drop it in the `on start` block on the workspace
 
-  ![The on start block with a set counter ro 0 block in it](../Images/SetCounterTo0.png)
+  ![The on start block with a set counter to 0 block in it](../Images/SetCounterTo0.png)
+
+## Set the radio group
+
+* Select *Radio* from the toolbox
+* Drag the `radio set group` block and drop it in the `on start` block on the workspace, below the `set counter to 0` block.
+* Make sure the radio group in the `radio set group` block is set to `0`. If not, select the value in the `radio set group` block and use the slider that appears to change the value to 0.
+
+  ![The on start block with a radio set group to 0 block in it](../Images/OnStartRadioChannel.png)
 
 <hr/>
 
