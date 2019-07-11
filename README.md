@@ -45,7 +45,7 @@ If you want to use a working version of the code, you can import the project usi
 * Select **Go ahread!** to load the project in the MakeCode editor
 
 You can also import the code from this URL -
-[makecode.microbit.org/_g5R6pjVkE290](https://makecode.microbit.org/_g5R6pjVkE290).
+[makecode.microbit.org/_du14RM7mT4fC](https://makecode.microbit.org/_du14RM7mT4fC).
 
 * Copy the URL
 * From the [MakeCode home page](https://makecode.microbit.org/) select the **Import** button
