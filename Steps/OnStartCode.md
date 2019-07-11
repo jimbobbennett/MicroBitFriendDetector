@@ -37,7 +37,7 @@ The *Variables* toolbox will contain a few more items now - a block to use the c
 
 * Select *Radio* from the toolbox
 * Drag the `radio set group` block and drop it in the `on start` block on the workspace, below the `set counter to 0` block.
-* Make sure the radio group in the `radio set group` block is set to `0`. If not, select the value in the `radio set group` block and use the slider that appears to change the value to 0.
+* Make sure the radio group in the `radio set group` block is set to `1`. If not, select the value in the `radio set group` block and use the slider that appears to change the value to 1.
 
   ![The on start block with a radio set group to 0 block in it](../Images/OnStartRadioChannel.png)
 
